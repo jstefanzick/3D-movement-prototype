@@ -6,7 +6,7 @@ public class PropellerRotate : MonoBehaviour
 {
 
     public float spaceInput;
-    public float speed = 20;
+    public float speed = 4000;
     // Start is called before the first frame update
     void Start()
     {
