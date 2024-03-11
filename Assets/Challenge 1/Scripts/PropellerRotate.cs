@@ -19,5 +19,10 @@ public class PropellerRotate : MonoBehaviour
         spaceInput = Input.GetAxis("Jump");
 
         transform.Rotate(Vector3.forward * Time.deltaTime * speed * spaceInput);
+
+        if(spaceInput == 0)
+        {
+            transform.Rotate(Vector3.back * Time.deltaTime * (speed / 8));
+        }
     }
 }

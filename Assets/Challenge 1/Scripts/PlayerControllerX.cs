@@ -35,5 +35,9 @@ public class PlayerControllerX : MonoBehaviour
         transform.Rotate(Vector3.forward * rotationSpeed * Time.deltaTime * turnInput);
 
         transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime * horizontalInput);
+
+        if(spaceInput == 0){
+            transform.Translate(Vector3.down * Time.deltaTime * 10);
+        }
     }
 }
